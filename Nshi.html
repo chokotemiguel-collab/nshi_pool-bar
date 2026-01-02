@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(bg3.jpeg);
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .menu_nav {
+            position: center;
+            margin: 0 auto;;
+            border-radius: 10%;
+            border: solid black;
+            border-width: 1px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 60px;
+            line-height: 50px;
+            background-color: rgba(0, 0, 0, 0.253);
+       
+        
+        }
+
+        .menu a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 2vw;
+            margin: 15px 0;
+            padding: 12px 25px;
+            border-radius: 8px;
+            background: linear-gradient(to bottom, #00bfff, #151f3e);
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu a:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            background: linear-gradient(90deg, #ffd700, #ff4500);
+            text-shadow: 1px 1px 5px black;
+        }
+
+        .menu a:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+       @media screen and (max-width: 768px) {
+        .menu_nav {
+            padding: 30px 40px;
+        }
+        .menu a {
+            font-size: 4vw;
+            padding: 10px 20px;
+        }
+    }
+
+    /* Téléphones */
+    @media screen and (max-width: 480px) {
+        .menu_nav {
+            padding: 20px 20px;
+        }
+        .menu a {
+            font-size: 5vw;
+            padding: 10px 15px;
+        }
+    }
+       
+
+    </style>
+</head>
+
+<body>
+    <div class="menu_nav">
+        <div class="menu"> <a href="nshi_menu.pdf">Nshi menu</a><br></div>
+        <div class="menu"> <a href="Nshi_wine.pdf">Nshi wine</a><br></div>
+        <div class="menu"> <a href="NSHI_Food.pdf">Nshi food</a></div>
+    </div>
+
+</body>
+
+</html>
